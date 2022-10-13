@@ -44,17 +44,12 @@ import msal
 now = datetime.now() # current date and time
 date = now.strftime("%m-%d-%Y")
 
-
-
 logging.basicConfig(
         filename = f'log/{date}.csv', 
         level = logging.INFO, 
         format = '%(levelname)s:%(asctime)s,%(message)s',
         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-
-
-  
   
 def timer_func(func):
     # This function shows the execution time of 
@@ -173,28 +168,11 @@ class MailExchangeScrappper:
             for item in graph_data['value']:
                 body = item['bodyPreview']
                 self.get_mailfolder(item['parentFolderId'])
-                # if self.check_ssn_regex(body):
-                #     empty_data["value"].append(item)
-                #     folder_path = f"{self.current_dir}/emailData/email-{self.total_email_count + 1}"
-                #     if not os.path.exists(folder_path):
-                #         os.makedirs(folder_path)
-
-                #     with open(f"{folder_path}/mailbody.json", "w") as outfile:
-                #         outfile.write(json.dumps(item, indent=4))
-                    
-                # if item['hasAttachments']:
-                #     self.get_all_attachment_by_message_id(item['id'])
-                if self.check_ssn_regex(body): # or item['hasAttachments']:
-                    # reason = ' '.join(x for x in set(self.attachment_found_file_list_extension))
-                    # if len(reason) > 0:
-                    #     reason = reason + " file Attachment has SSN"
-                    # total_attachments = ', '.join(x for x in self.attachment_found_file_name)
+                if self.check_ssn_regex(body): 
                     logging.info(f"{self.email_parent_folder['displayName']} , {item['sender']['emailAddress']['address']} , {item['toRecipients'][0]['emailAddress']['address']} , {item['subject']} , {item['receivedDateTime']}")
-                # self.total_email_count += 1
 
             if self.next_page:
                 self.get_email_messages_of_user()
-            # self.user_messages = empty_data
         else:
             print("===========Error in getting user messages ==========")
 
@@ -207,7 +185,6 @@ class MailExchangeScrappper:
            
             self.attachment_data_of_messages_by_id = graph_data['value']
             self.create_files_via_content_bytes()
-           
         else:
             print("===========Error in getting mail folders ==========")
 
@@ -218,9 +195,10 @@ class MailExchangeScrappper:
             self.attachment_found_file_name.append(item['name'])
             file_type = item['name'].split('.')[-1]
             if file_type in self.allowed_extenstion:
-                filename = item['name'] #+ "_" + item['id']
+                filename = item['name']
                 bytesdata = bytes(item['contentBytes'], 'utf-8')
                 xlDecoded = base64.b64decode(bytesdata)
+                
                 with open(f'temp/{filename}.{file_type}', 'wb') as f:
                     f.write(xlDecoded)
                 
@@ -302,10 +280,8 @@ class MailExchangeScrappper:
             self.config["endpoint"] + self.user_details['id'] + "/mailFolders/?includeHiddenFolders=true",
             headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
             print("Graph API call result: ")
-            # print(json.dumps(graph_data, indent=2))
             self.set_folder_names_list(graph_data)
             self.mail_folders = json.dumps(graph_data, indent=2)
-            # print(self.folders_names_lists)
             self.get_mail_by_folder_name()
 
         else:
@@ -332,7 +308,6 @@ class MailExchangeScrappper:
             self.config["endpoint"] + self.user_details['id'] + "/mailFolders/" + str(id) + "/messages",
             headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
             print("Graph API call result: ")
-            # print(json.dumps(graph_data, indent=2))
             self.get_nested_folders(id)
         elif folder_name == "Q" or folder_name == 'q':
             sys.exit()
@@ -347,8 +322,6 @@ class MailExchangeScrappper:
             headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
             print("Graph API call result: ")
             print(json.dumps(graph_data, indent=2))
-            
-
         else:
             print("===========Error in getting nested mail folders ==========")
 
@@ -373,7 +346,6 @@ if __name__ == "__main__":
                 scrapper.get_email_messages_of_user()
                 t2 = time()
                 print(f'Whole Script executed in {(t2-t1):.4f}s')
-                # scrapper.get_user_mail_folders()
             except Exception as e:
                 print("Email: ", row[0])
                 print("Something went wrong with Exception: ", e)
