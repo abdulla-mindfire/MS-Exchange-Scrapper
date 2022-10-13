@@ -55,10 +55,10 @@ def timer_func(func):
     # This function shows the execution time of 
     # the function object passed
     def wrap_func(*args, **kwargs):
-        t1 = time()
+        start_time = time()
         result = func(*args, **kwargs)
-        t2 = time()
-        print(f'Function {func.__name__!r} executed in {(t2-t1):.4f}s')
+        end_time = time()
+        print(f'Function {func.__name__!r} executed in {(end_time - start_time):.4f}s')
         return result
     return wrap_func
 
@@ -102,25 +102,28 @@ class MailExchangeScrappper:
 
     @timer_func
     def long_lived_token(self):
-        # Create a preferably long-lived app instance which maintains a token cache.
-        app = msal.ConfidentialClientApplication(
-            self.config["client_id"], authority=self.config["authority"],
-            client_credential=self.config["secret"],
-            # token_cache=...  # Default cache is in memory only.
-                            # You can learn how to use SerializableTokenCache from
-                            # https://msal-python.rtfd.io/en/latest/#msal.SerializableTokenCache
-            )
+        try:
+            # Create a preferably long-lived app instance which maintains a token cache.
+            app = msal.ConfidentialClientApplication(
+                self.config["client_id"], authority=self.config["authority"],
+                client_credential=self.config["secret"],
+                # token_cache=...  # Default cache is in memory only.
+                                # You can learn how to use SerializableTokenCache from
+                                # https://msal-python.rtfd.io/en/latest/#msal.SerializableTokenCache
+                )
 
-        # The pattern to acquire a token looks like this.
-        # Firstly, looks up a token from cache
-        # Since we are looking for token for the current app, NOT for an end user,
-        # notice we give account parameter as None.
-        self.result = app.acquire_token_silent(self.config["scope"], account=None)
+            # The pattern to acquire a token looks like this.
+            # Firstly, looks up a token from cache
+            # Since we are looking for token for the current app, NOT for an end user,
+            # notice we give account parameter as None.
+            self.result = app.acquire_token_silent(self.config["scope"], account=None)
 
-        if not self.result:
-            print("No suitable token exists in cache. Let's get a new one from AAD.")
-            self.result = app.acquire_token_for_client(scopes=self.config["scope"])
-        print("Token Set")
+            if not self.result:
+                print("No suitable token exists in cache. Let's get a new one from AAD.")
+                self.result = app.acquire_token_for_client(scopes=self.config["scope"])
+            print("Token Set")
+        except Exception as e:
+            print("Failed to Get Token", str(e))
 
     @timer_func
     def get_user_details_by_email(self, email):
@@ -327,7 +330,6 @@ class MailExchangeScrappper:
 
 
 if __name__ == "__main__":
-    import csv
     try:
         config = json.load(open(sys.argv[1]))
         email_csv = open(sys.argv[2])
@@ -341,11 +343,11 @@ if __name__ == "__main__":
         fields = next(reader)
         for row in reader:
             try:
-                t1 = time()
+                start_time = time()
                 scrapper.get_user_details_by_email(row[0])
                 scrapper.get_email_messages_of_user()
-                t2 = time()
-                print(f'Whole Script executed in {(t2-t1):.4f}s')
+                end_time = time()
+                print(f'Whole Script executed in {(end_time - start_time):.4f}s')
             except Exception as e:
                 print("Email: ", row[0])
                 print("Something went wrong with Exception: ", e)
