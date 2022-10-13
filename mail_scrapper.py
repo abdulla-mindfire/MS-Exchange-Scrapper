@@ -43,21 +43,7 @@ import msal
 
 now = datetime.now() # current date and time
 date = now.strftime("%m-%d-%Y")
-# current_dir = os.getcwd()
-# path = f'{current_dir}/log/{date}.csv'
-# # adding header
-# headerList = ['Date-Time', 'Folder', 'Sender', 'Receiver', 'Subject', 'Date-Received']
 
-# try:
-#     isExist = os.path.exists(path)
-#     if isExist:
-#         with open(path, 'w') as file:
-#             dw = csv.DictWriter(file, delimiter=',', 
-#                                 fieldnames=headerList)
-#             dw.writeheader()
-# except Exception as e:
-#     print(e)
-#     pass
 
 
 logging.basicConfig(
@@ -83,11 +69,15 @@ def timer_func(func):
 
 
 class MailExchangeScrappper:
+    extract_ssn_pattern = "(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}"
+    extract_ssn_pattern_from_file = "([\(])?\d{3,4}([- \)])?(\s)?\d{2}([- \s])?\d{3,4}([-])?(\d{2})?"
+    allowed_extenstion = ['csv', 'docs', 'docx', 'xlsx', 'xls']
+    current_dir = os.getcwd()
+
+
     def __init__(self, config) -> None:
         self.config = config
         self.result = None
-        self.extract_ssn_pattern = "(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}"
-        self.extract_ssn_pattern_from_file = "([\(])?\d{3,4}([- \)])?(\s)?\d{2}([- \s])?\d{3,4}([-])?(\d{2})?"
         self.user_details = {}
         self.user_messages = {}
         self.mail_folders = {}
@@ -100,10 +90,8 @@ class MailExchangeScrappper:
         self.attachment_found_file_name = []
         self.email_parent_folder = {}
         self.next_page = None
-        self.current_dir = os.getcwd()
         self.total_email_count = len(os.listdir(f"{self.current_dir}/emailData"))
         self.long_lived_token()
-        self.allowed_extenstion = ['csv', 'docs', 'docx', 'xlsx', 'xls']
 
     def check_token_status(self):
         if self.result is not None and "access_token" in self.result:
@@ -175,7 +163,6 @@ class MailExchangeScrappper:
             else:
                 graph_data = requests.get(self.next_page, headers={'Authorization': 'Bearer ' + self.result['access_token']},).json()
             print("Graph API call result: ")
-            print(len(graph_data['value']), '================')
 
             if "@odata.nextLink" in graph_data:
                 self.next_page = graph_data['@odata.nextLink']
