@@ -1,0 +1,67 @@
+{
+    "@odata.etag": "W/\"CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADu0\"",
+    "id": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEMAADKi2i0lOj5TpabSuW1hJ9BAAAAAFnfAAA=",
+    "createdDateTime": "2022-10-07T13:30:48Z",
+    "lastModifiedDateTime": "2022-10-07T13:30:49Z",
+    "changeKey": "CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADu0",
+    "categories": [],
+    "receivedDateTime": "2022-10-07T13:30:48Z",
+    "sentDateTime": "2022-10-07T13:30:44Z",
+    "hasAttachments": false,
+    "internetMessageId": "<3452e060-90a1-e746-563a-ef1b26db7e78@mindfiresolutions.com>",
+    "subject": "test",
+    "bodyPreview": "test\r\n\r\n\r\n123-33-3333",
+    "importance": "normal",
+    "parentFolderId": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAuAAAAAAAK4VcuOxFeRp8F3FpgpCMjAQDKi2i0lOj5TpabSuW1hJ9BAAAAAAEMAAA=",
+    "conversationId": "AAQkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAQAB6VDYsTT3dBkuP6di9DBxY=",
+    "conversationIndex": "AQHY2lEDHpUNixNPd0GS4/p2L0MHFg==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEMAADKi2i0lOj5TpabSuW1hJ9BAAAAAFnfAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "test\r\n\r\n\r\n123-33-3333\r\n"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Amitabh Patnaik",
+            "address": "amitabhp@mindfiresolutions.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Amitabh Patnaik",
+            "address": "amitabhp@mindfiresolutions.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "abdulla@joori.in",
+                "address": "abdulla@joori.in"
+            }
+        },
+        {
+            "emailAddress": {
+                "name": "Abdulla Ansari",
+                "address": "abdulla@joori863.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients": [
+        {
+            "emailAddress": {
+                "name": "amit@joori.in",
+                "address": "amit@joori.in"
+            }
+        }
+    ],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

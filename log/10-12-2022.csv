@@ -1,0 +1,50 @@
+INFO:10/12/2022 10:52:01 AM,sub 9 , abdulla@joori.in , abdulla@joori863.onmicrosoft.com , Test from Joori Domain , 2022-10-11T04:28:07Z ,, 
+INFO:10/12/2022 10:52:01 AM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori.in , test , 2022-10-07T13:30:48Z ,, 
+INFO:10/12/2022 10:52:02 AM,My Folder , abdulla.ansari@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , New Docx test , 2022-10-07T05:41:22Z ,, 
+INFO:10/12/2022 10:52:02 AM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , Re: SSN Check , 2022-10-07T05:31:26Z ,, 
+INFO:10/12/2022 10:52:03 AM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , SSN Check , 2022-10-06T11:40:48Z ,, 
+INFO:10/12/2022 10:52:03 AM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN from Amit MF email , 2022-10-06T10:40:55Z ,, 
+INFO:10/12/2022 10:52:03 AM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: CSV Attachment , 2022-10-06T10:03:27Z ,, 
+INFO:10/12/2022 10:52:04 AM,Sub 1 Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN in body and xls , 2022-10-06T10:00:29Z ,, 
+INFO:10/12/2022 10:52:04 AM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , CSV Attachment , 2022-10-06T10:00:16Z ,, 
+INFO:10/12/2022 10:52:04 AM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , SSN from Amit MF email , 2022-10-06T09:50:25Z ,, 
+INFO:10/12/2022 10:52:05 AM,Sent Items , abdulla@joori863.onmicrosoft.com , amitabhp@mindfiresolutions.com , SSN , 2022-10-06T09:47:25Z ,, 
+INFO:10/12/2022 10:52:05 AM,Sent Items , abdulla@joori863.onmicrosoft.com , AmitabhPatnaik@JOORI863.onmicrosoft.com , SSN , 2022-10-06T09:46:36Z ,, 
+INFO:10/12/2022 10:57:02 AM,Something went wrong with the email: abdulla@joori862.onmicrosoft.com While fetching user does not found with the system
+INFO:10/12/2022 10:57:56 AM,Something went wrong with the email: abdulla@joori862.onmicrosoft.com While fetching user does not found with the system, {'error': {'code': 'Request_ResourceNotFound', 'message': "Resource 'abdulla@joori862.onmicrosoft.com' does not exist or one of its queried reference-property objects are not present.", 'innerError': {'date': '2022-10-12T05:27:56', 'request-id': '4b0c0abc-2b8a-46eb-bb79-f4f5dbf62278', 'client-request-id': '4b0c0abc-2b8a-46eb-bb79-f4f5dbf62278'}}}
+INFO:10/12/2022 11:04:49 AM,sub 9 , abdulla@joori.in , abdulla@joori863.onmicrosoft.com , Test from Joori Domain , 2022-10-11T04:28:07Z ,, 
+INFO:10/12/2022 11:04:49 AM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori.in , test , 2022-10-07T13:30:48Z ,, 
+INFO:10/12/2022 11:04:50 AM,My Folder , abdulla.ansari@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , New Docx test , 2022-10-07T05:41:22Z ,, 
+INFO:10/12/2022 11:04:51 AM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , Re: SSN Check , 2022-10-07T05:31:26Z ,, 
+INFO:10/12/2022 11:04:51 AM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , SSN Check , 2022-10-06T11:40:48Z ,, 
+INFO:10/12/2022 11:04:52 AM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN from Amit MF email , 2022-10-06T10:40:55Z ,, 
+INFO:10/12/2022 11:04:52 AM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: CSV Attachment , 2022-10-06T10:03:27Z ,, 
+INFO:10/12/2022 11:04:53 AM,Sub 1 Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN in body and xls , 2022-10-06T10:00:29Z ,, 
+INFO:10/12/2022 11:04:53 AM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , CSV Attachment , 2022-10-06T10:00:16Z ,, 
+INFO:10/12/2022 11:04:53 AM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , SSN from Amit MF email , 2022-10-06T09:50:25Z ,, 
+INFO:10/12/2022 11:04:54 AM,Sent Items , abdulla@joori863.onmicrosoft.com , amitabhp@mindfiresolutions.com , SSN , 2022-10-06T09:47:25Z ,, 
+INFO:10/12/2022 11:04:54 AM,Sent Items , abdulla@joori863.onmicrosoft.com , AmitabhPatnaik@JOORI863.onmicrosoft.com , SSN , 2022-10-06T09:46:36Z ,, 
+INFO:10/12/2022 03:21:42 PM,sub 9 , abdulla@joori.in , abdulla@joori863.onmicrosoft.com , Test from Joori Domain , 2022-10-11T04:28:07Z
+INFO:10/12/2022 03:21:43 PM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori.in , test , 2022-10-07T13:30:48Z
+INFO:10/12/2022 03:21:43 PM,My Folder , abdulla.ansari@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , New Docx test , 2022-10-07T05:41:22Z
+INFO:10/12/2022 03:21:44 PM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , Re: SSN Check , 2022-10-07T05:31:26Z
+INFO:10/12/2022 03:21:44 PM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , SSN Check , 2022-10-06T11:40:48Z
+INFO:10/12/2022 03:21:44 PM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN from Amit MF email , 2022-10-06T10:40:55Z
+INFO:10/12/2022 03:21:44 PM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: CSV Attachment , 2022-10-06T10:03:27Z
+INFO:10/12/2022 03:21:45 PM,Sub 1 Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN in body and xls , 2022-10-06T10:00:29Z
+INFO:10/12/2022 03:21:46 PM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , CSV Attachment , 2022-10-06T10:00:16Z
+INFO:10/12/2022 03:21:46 PM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , SSN from Amit MF email , 2022-10-06T09:50:25Z
+INFO:10/12/2022 03:21:47 PM,Sent Items , abdulla@joori863.onmicrosoft.com , amitabhp@mindfiresolutions.com , SSN , 2022-10-06T09:47:25Z
+INFO:10/12/2022 03:21:47 PM,Sent Items , abdulla@joori863.onmicrosoft.com , AmitabhPatnaik@JOORI863.onmicrosoft.com , SSN , 2022-10-06T09:46:36Z
+INFO:10/12/2022 03:54:08 PM,sub 9 , abdulla@joori.in , abdulla@joori863.onmicrosoft.com , Test from Joori Domain , 2022-10-11T04:28:07Z
+INFO:10/12/2022 03:54:09 PM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori.in , test , 2022-10-07T13:30:48Z
+INFO:10/12/2022 03:54:09 PM,My Folder , abdulla.ansari@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , New Docx test , 2022-10-07T05:41:22Z
+INFO:10/12/2022 03:54:10 PM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , Re: SSN Check , 2022-10-07T05:31:26Z
+INFO:10/12/2022 03:54:10 PM,Deleted Items , abdulla@joori863.onmicrosoft.com , abdulla.ansari@mindfiresolutions.com , SSN Check , 2022-10-06T11:40:48Z
+INFO:10/12/2022 03:54:10 PM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN from Amit MF email , 2022-10-06T10:40:55Z
+INFO:10/12/2022 03:54:10 PM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: CSV Attachment , 2022-10-06T10:03:27Z
+INFO:10/12/2022 03:54:11 PM,Sub 1 Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , Re: SSN in body and xls , 2022-10-06T10:00:29Z
+INFO:10/12/2022 03:54:11 PM,Sub Folder , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , CSV Attachment , 2022-10-06T10:00:16Z
+INFO:10/12/2022 03:54:12 PM,Inbox , amitabhp@mindfiresolutions.com , abdulla@joori863.onmicrosoft.com , SSN from Amit MF email , 2022-10-06T09:50:25Z
+INFO:10/12/2022 03:54:12 PM,Sent Items , abdulla@joori863.onmicrosoft.com , amitabhp@mindfiresolutions.com , SSN , 2022-10-06T09:47:25Z
+INFO:10/12/2022 03:54:12 PM,Sent Items , abdulla@joori863.onmicrosoft.com , AmitabhPatnaik@JOORI863.onmicrosoft.com , SSN , 2022-10-06T09:46:36Z

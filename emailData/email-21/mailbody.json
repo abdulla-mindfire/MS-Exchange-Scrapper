@@ -1,0 +1,54 @@
+{
+    "@odata.etag": "W/\"CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADFG\"",
+    "id": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEKAADKi2i0lOj5TpabSuW1hJ9BAAAAAkTPAAA=",
+    "createdDateTime": "2022-10-06T11:40:14Z",
+    "lastModifiedDateTime": "2022-10-07T05:31:32Z",
+    "changeKey": "CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADFG",
+    "categories": [],
+    "receivedDateTime": "2022-10-06T11:40:48Z",
+    "sentDateTime": "2022-10-06T11:40:47Z",
+    "hasAttachments": true,
+    "internetMessageId": "<MA0P287MB0204B1FDA76F0B3B8B9E7220D15C9@MA0P287MB0204.INDP287.PROD.OUTLOOK.COM>",
+    "subject": "SSN Check",
+    "bodyPreview": "Hello find\r\n\r\n234-32-4345",
+    "importance": "normal",
+    "parentFolderId": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAuAAAAAAAK4VcuOxFeRp8F3FpgpCMjAQDKi2i0lOj5TpabSuW1hJ9BAAAAAAEKAAA=",
+    "conversationId": "AAQkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAQAGW42Kq3P4FKqLuGEEqfn5E=",
+    "conversationIndex": "AQHY2XhmZbjYqrc/gUqou4YQSp+fkQ==",
+    "isDeliveryReceiptRequested": false,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEKAADKi2i0lOj5TpabSuW1hJ9BAAAAAkTPAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "html",
+        "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><style type=\"text/css\" style=\"display:none\">\r\n<!--\r\np\r\n\t{margin-top:0;\r\n\tmargin-bottom:0}\r\n-->\r\n</style></head><body dir=\"ltr\"><div class=\"elementToProof\" style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\">Hello find</div><div class=\"elementToProof\" style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\"><br></div><div class=\"elementToProof\" style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\">234-32-4345<br></div></body></html>"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Abdulla Ansari",
+            "address": "abdulla@joori863.onmicrosoft.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Abdulla Ansari",
+            "address": "abdulla@joori863.onmicrosoft.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "abdulla.ansari@mindfiresolutions.com",
+                "address": "abdulla.ansari@mindfiresolutions.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

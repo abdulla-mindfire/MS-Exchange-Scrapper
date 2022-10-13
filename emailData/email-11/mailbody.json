@@ -1,0 +1,60 @@
+{
+    "@odata.etag": "W/\"CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADaU\"",
+    "id": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAKjeAADKi2i0lOj5TpabSuW1hJ9BAAAAAnAaAAA=",
+    "createdDateTime": "2022-10-06T10:03:24Z",
+    "lastModifiedDateTime": "2022-10-07T09:02:24Z",
+    "changeKey": "CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADaU",
+    "categories": [],
+    "receivedDateTime": "2022-10-06T10:03:27Z",
+    "sentDateTime": "2022-10-06T10:02:44Z",
+    "hasAttachments": true,
+    "internetMessageId": "<e1ed4551-9ffe-a09a-d05d-09f6db1745ea@mindfiresolutions.com>",
+    "subject": "Re: CSV Attachment",
+    "bodyPreview": "Guys 3 tabs attached\r\n\r\nOn 06/10/22 3:30 pm, Amitabh Patnaik wrote:\r\n>\r\n> On 06/10/22 3:19 pm, Amitabh Patnaik wrote:\r\n>> Hi Abdulla\r\n>>\r\n>> SSN info for clients\r\n>>\r\n>> 123-22-2222\r\n>>\r\n>> 234-44-2222\r\n>>\r\n>> 342-33-4444\r\n>>\r\n>> 123232323\r\n>>\r\n>> 123 23 ",
+    "importance": "normal",
+    "parentFolderId": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAuAAAAAAAK4VcuOxFeRp8F3FpgpCMjAQDKi2i0lOj5TpabSuW1hJ9BAAAAAKjeAAA=",
+    "conversationId": "AAQkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAQAAOwapO837RCo3mWkxfrK4I=",
+    "conversationIndex": "AQHY2WpvA7Bqk7zftEKjeZaTF+srgq4BIrkA",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAKjeAADKi2i0lOj5TpabSuW1hJ9BAAAAAnAaAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Guys 3 tabs attached\r\n\r\nOn 06/10/22 3:30 pm, Amitabh Patnaik wrote:\r\n>\r\n> On 06/10/22 3:19 pm, Amitabh Patnaik wrote:\r\n>> Hi Abdulla\r\n>>\r\n>> SSN info for clients\r\n>>\r\n>> 123-22-2222\r\n>>\r\n>> 234-44-2222\r\n>>\r\n>> 342-33-4444\r\n>>\r\n>> 123232323\r\n>>\r\n>> 123 23 2323\r\n>>\r\n>> Test end\r\n>>"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Amitabh Patnaik",
+            "address": "amitabhp@mindfiresolutions.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Amitabh Patnaik",
+            "address": "amitabhp@mindfiresolutions.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Abdulla Ansari",
+                "address": "abdulla@joori863.onmicrosoft.com"
+            }
+        },
+        {
+            "emailAddress": {
+                "name": "Amitabh Patnaik",
+                "address": "AmitabhPatnaik@JOORI863.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "@odata.etag": "W/\"CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAABBf\"",
+    "id": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEMAADKi2i0lOj5TpabSuW1hJ9BAAAAAFnUAAA=",
+    "createdDateTime": "2022-10-06T09:50:25Z",
+    "lastModifiedDateTime": "2022-10-06T09:50:25Z",
+    "changeKey": "CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAABBf",
+    "categories": [],
+    "receivedDateTime": "2022-10-06T09:50:25Z",
+    "sentDateTime": "2022-10-06T09:49:57Z",
+    "hasAttachments": false,
+    "internetMessageId": "<87fdf76e-d9e2-72a3-7113-5af5c7ec06c8@mindfiresolutions.com>",
+    "subject": "SSN from Amit MF email",
+    "bodyPreview": "Hi Abdulla\r\n\r\nSSN info for clients\r\n\r\n123-22-2222\r\n\r\n234-44-2222\r\n\r\n342-33-4444\r\n\r\n123232323\r\n\r\n123 23 2323\r\n\r\nTest end",
+    "importance": "normal",
+    "parentFolderId": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAuAAAAAAAK4VcuOxFeRp8F3FpgpCMjAQDKi2i0lOj5TpabSuW1hJ9BAAAAAAEMAAA=",
+    "conversationId": "AAQkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAQALqSlLNF68VNnPE-ZnG0nsg=",
+    "conversationIndex": "AQHY2WkOupKUs0XrxU2c8T9mcbSeyA==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEMAADKi2i0lOj5TpabSuW1hJ9BAAAAAFnUAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "Hi Abdulla\r\n\r\nSSN info for clients\r\n\r\n123-22-2222\r\n\r\n234-44-2222\r\n\r\n342-33-4444\r\n\r\n123232323\r\n\r\n123 23 2323\r\n\r\nTest end\r\n"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Amitabh Patnaik",
+            "address": "amitabhp@mindfiresolutions.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Amitabh Patnaik",
+            "address": "amitabhp@mindfiresolutions.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Abdulla Ansari",
+                "address": "abdulla@joori863.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

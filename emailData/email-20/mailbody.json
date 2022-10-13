@@ -1,0 +1,54 @@
+{
+    "@odata.etag": "W/\"CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADFR\"",
+    "id": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEKAADKi2i0lOj5TpabSuW1hJ9BAAAAAkTQAAA=",
+    "createdDateTime": "2022-10-07T05:31:25Z",
+    "lastModifiedDateTime": "2022-10-07T05:31:47Z",
+    "changeKey": "CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAAAADFR",
+    "categories": [],
+    "receivedDateTime": "2022-10-07T05:31:26Z",
+    "sentDateTime": "2022-10-07T05:31:26Z",
+    "hasAttachments": false,
+    "internetMessageId": "<MA0P287MB0204D7E7B9E6D2F5371623E3D15F9@MA0P287MB0204.INDP287.PROD.OUTLOOK.COM>",
+    "subject": "Re: SSN Check",
+    "bodyPreview": "________________________________\r\nFrom: Abdulla Ansari\r\nSent: 06 October 2022 17:10\r\nTo: abdulla.ansari@mindfiresolutions.com <abdulla.ansari@mindfiresolutions.com>\r\nSubject: SSN Check\r\n\r\nHello find\r\n\r\n234-32-4345",
+    "importance": "normal",
+    "parentFolderId": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAuAAAAAAAK4VcuOxFeRp8F3FpgpCMjAQDKi2i0lOj5TpabSuW1hJ9BAAAAAAEKAAA=",
+    "conversationId": "AAQkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAQAGW42Kq3P4FKqLuGEEqfn5E=",
+    "conversationIndex": "AQHY2XhmZbjYqrc/gUqou4YQSp+fka4CaSVY",
+    "isDeliveryReceiptRequested": false,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAAEKAADKi2i0lOj5TpabSuW1hJ9BAAAAAkTQAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "html",
+        "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><div style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\"><br></div><hr tabindex=\"-1\" style=\"display:inline-block; width:98%\"><div id=\"divRplyFwdMsg\" dir=\"ltr\"><font face=\"Calibri, sans-serif\" color=\"#000000\" style=\"font-size:11pt\"><b>From:</b> Abdulla Ansari<br><b>Sent:</b> 06 October 2022 17:10<br><b>To:</b> abdulla.ansari@mindfiresolutions.com &lt;abdulla.ansari@mindfiresolutions.com&gt;<br><b>Subject:</b> SSN Check</font> <div>&nbsp;</div></div><style type=\"text/css\" style=\"display:none\">\r\n<!--\r\np\r\n\t{margin-top:0;\r\n\tmargin-bottom:0}\r\n-->\r\n</style><div dir=\"ltr\"><div class=\"x_elementToProof\" style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\">Hello find</div><div class=\"x_elementToProof\" style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\"><br></div><div class=\"x_elementToProof\" style=\"font-family:Calibri,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(0,0,0)\">234-32-4345<br></div></div></body></html>"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Abdulla Ansari",
+            "address": "abdulla@joori863.onmicrosoft.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Abdulla Ansari",
+            "address": "abdulla@joori863.onmicrosoft.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "abdulla.ansari@mindfiresolutions.com",
+                "address": "abdulla.ansari@mindfiresolutions.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

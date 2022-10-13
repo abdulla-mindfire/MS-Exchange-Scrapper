@@ -1,0 +1,54 @@
+{
+    "@odata.etag": "W/\"CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAABDAc2\"",
+    "id": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAKjdAADKi2i0lOj5TpabSuW1hJ9BAAAAAmwsAAA=",
+    "createdDateTime": "2022-10-07T05:41:22Z",
+    "lastModifiedDateTime": "2022-10-11T05:44:59Z",
+    "changeKey": "CQAAABYAAADKi2i0lOj5TpabSuW1hJ9BAAABDAc2",
+    "categories": [],
+    "receivedDateTime": "2022-10-07T05:41:22Z",
+    "sentDateTime": "2022-10-07T05:41:11Z",
+    "hasAttachments": true,
+    "internetMessageId": "<9c34207c-1448-afef-2b55-aaec82139b65@mindfiresolutions.com>",
+    "subject": "New Docx test",
+    "bodyPreview": "This docs testing with attachment\r\n\r\n323-43-2345",
+    "importance": "normal",
+    "parentFolderId": "AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAuAAAAAAAK4VcuOxFeRp8F3FpgpCMjAQDKi2i0lOj5TpabSuW1hJ9BAAAAAKjdAAA=",
+    "conversationId": "AAQkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MAAQAEs7Og42j91LpMTdPLXFG48=",
+    "conversationIndex": "AQHY2g9uSzs6DjaP3UukxN08tcUbjw==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AAMkADdlZWY5MTBmLTdlNTgtNDA5YS04MDQ3LWEwOGNiNTcyNjU3MABGAAAAAAAK4VcuOxFeRp8F3FpgpCMjBwDKi2i0lOj5TpabSuW1hJ9BAAAAAKjdAADKi2i0lOj5TpabSuW1hJ9BAAAAAmwsAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "text",
+        "content": "This docs testing with attachment\r\n\r\n323-43-2345\r\n"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "Abdulla Ansari",
+            "address": "abdulla.ansari@mindfiresolutions.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "Abdulla Ansari",
+            "address": "abdulla.ansari@mindfiresolutions.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Abdulla Ansari",
+                "address": "abdulla@joori863.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}
