@@ -110,8 +110,8 @@ class MailExchangeScrappper:
         Regex checking for SSN in email Body
         :return: Bool
         '''
-        data = re.findall(self.extract_ssn_pattern, body)
-        if len(data) > 0:
+        data = re.search(self.extract_ssn_pattern, body)
+        if data:
             return True
         return False
 
