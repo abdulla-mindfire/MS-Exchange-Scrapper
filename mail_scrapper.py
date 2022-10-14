@@ -64,6 +64,13 @@ def timer_func(func):
 
 
 class MailExchangeScrappper:
+    '''
+    MailExchangeScrapper class to get the user details and their e-mails from
+    their mailbox.
+    Attachment to get from emails check the SSN from email body and attachments
+    too having the files with extension (xlsx, xls, docx, csv)
+    @params => config file in parameter.json
+    '''
     extract_ssn_pattern = "(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}"
     extract_ssn_pattern_from_file = "([\(])?\d{3,4}([- \)])?(\s)?\d{2}([- \s])?\d{3,4}([-])?(\d{2})?"
     allowed_extenstion = ['csv', 'docs', 'docx', 'xlsx', 'xls']
@@ -89,11 +96,19 @@ class MailExchangeScrappper:
         self.long_lived_token()
 
     def check_token_status(self):
+        '''
+        To check the status of token if it is correctly set by method long_lived_token()
+        :return: Bool
+        '''
         if self.result is not None and "access_token" in self.result:
             return True
         return False
 
     def check_ssn_regex(self, body):
+        '''
+        Regex checking for SSN in email Body
+        :return: Bool
+        '''
         data = re.findall(self.extract_ssn_pattern, body)
         if len(data) > 0:
             return True
@@ -102,6 +117,10 @@ class MailExchangeScrappper:
 
     @timer_func
     def long_lived_token(self):
+        '''
+        Generate Long Lived Token from MS Graph API or from cache
+        :return: Dict with access token and expiry
+        '''
         try:
             # Create a preferably long-lived app instance which maintains a token cache.
             app = msal.ConfidentialClientApplication(
@@ -127,6 +146,12 @@ class MailExchangeScrappper:
 
     @timer_func
     def get_user_details_by_email(self, email):
+        '''
+        This method take user email as params and call the MS graph api and get 
+        back the user related information like name, email, id etc.
+        @params: str (email)
+        :return: Dict | containing user information
+        '''
         if self.check_token_status:
             graph_data = requests.get(  # Use token to call downstream service
             self.config["endpoint"] + email,
@@ -144,6 +169,13 @@ class MailExchangeScrappper:
     
     @timer_func
     def get_mailfolder(self, folder_id):
+        '''
+        This method take user email parentFolder id as params and call the MS 
+        graph api and get back the parent folder related information like 
+        name, id etc.
+        @params: str (parentFolderId)
+        :return: Dict | containing Folder information
+        '''
         graph_data = requests.get(  # Use token to call downstream service
             self.config["endpoint"] + self.user_details['id'] + "/mailFolders/" + folder_id + "?includeHiddenFolders=true",
             headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
@@ -152,6 +184,11 @@ class MailExchangeScrappper:
 
     @timer_func
     def get_email_messages_of_user(self):
+        '''
+        This method take user id from instance variable and call the MS 
+        graph api and get back all the email details
+        And check the SSN in body of Every email
+        '''
         if self.check_token_status:
             graph_data = {}
             if self.next_page is None:
