@@ -75,6 +75,7 @@ class MailExchangeScrappper:
     extract_ssn_pattern_from_file = "([\(])?\d{3,4}([- \)])?(\s)?\d{2}([- \s])?\d{3,4}([-])?(\d{2})?"
     allowed_extenstion = ['csv', 'docs', 'docx', 'xlsx', 'xls']
     current_dir = os.getcwd()
+    email_messages_data = {}
 
 
     def __init__(self, config) -> None:
@@ -190,22 +191,21 @@ class MailExchangeScrappper:
         And check the SSN in body of Every email
         '''
         if self.check_token_status:
-            graph_data = {}
             if self.next_page is None:
-                graph_data = requests.get(  # Use token to call downstream service
+                self.email_messages_data = requests.get(  # Use token to call downstream service
                 self.config["endpoint"] + self.user_details['id'] + "/messages",
                 headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
             else:
-                graph_data = requests.get(self.next_page, headers={'Authorization': 'Bearer ' + self.result['access_token']},).json()
+                self.email_messages_data = requests.get(self.next_page, headers={'Authorization': 'Bearer ' + self.result['access_token']},).json()
             print("Graph API call result: ")
 
-            if "@odata.nextLink" in graph_data:
-                self.next_page = graph_data['@odata.nextLink']
+            if "@odata.nextLink" in self.email_messages_data:
+                self.next_page = self.email_messages_data['@odata.nextLink']
             else:
                 self.next_page = None
             
-            empty_data = {"value": []}
-            for item in graph_data['value']:
+            # empty_data = {"value": []}
+            for item in self.email_messages_data['value']:
                 body = item['bodyPreview']
                 self.get_mailfolder(item['parentFolderId'])
                 if self.check_ssn_regex(body): 
