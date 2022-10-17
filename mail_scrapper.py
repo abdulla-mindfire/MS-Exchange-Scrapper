@@ -62,6 +62,14 @@ def timer_func(func):
         return result
     return wrap_func
 
+EMAIL_REGEX = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+ 
+# Define a function for validating an Email
+def check_email(email):
+    if(re.fullmatch(EMAIL_REGEX, email)):
+        return True
+    else:
+        return False
 
 class MailExchangeScrappper:
     '''
@@ -178,7 +186,7 @@ class MailExchangeScrappper:
         :return: Dict | containing Folder information
         '''
         graph_data = requests.get(  # Use token to call downstream service
-            self.config["endpoint"] + self.user_details['id'] + "/mailFolders/" + folder_id + "?includeHiddenFolders=true",
+            self.config["endpoint"] + self.user_details['id'] + "/mailFolders/" + folder_id + "?includeHiddenFolders=true&$select=displayName",
             headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
         
         self.email_parent_folder = graph_data
@@ -385,8 +393,12 @@ if __name__ == "__main__":
         for row in reader:
             try:
                 start_time = time()
-                scrapper.get_user_details_by_email(row[0])
-                scrapper.get_email_messages_of_user()
+                if check_email(row[0]):
+                    scrapper.get_user_details_by_email(row[0])
+                    scrapper.get_email_messages_of_user()
+                else:
+                    print(f"Email: {row[0]} is not valid")
+                    continue
                 end_time = time()
                 print(f'Whole Script executed in {(end_time - start_time):.4f}s')
             except Exception as e:
