@@ -206,10 +206,14 @@ class MailExchangeScrappper:
             
             # empty_data = {"value": []}
             for item in self.email_messages_data['value']:
-                body = item['bodyPreview']
-                self.get_mailfolder(item['parentFolderId'])
-                if self.check_ssn_regex(body): 
-                    logging.info(f"{self.email_parent_folder['displayName']} , {item['sender']['emailAddress']['address']} , {item['toRecipients'][0]['emailAddress']['address']} , {item['subject']} , {item['receivedDateTime']}")
+                try:
+                    body = item['bodyPreview']
+                    self.get_mailfolder(item['parentFolderId'])
+                    if self.check_ssn_regex(body): 
+                        logging.info(f"{self.email_parent_folder['displayName']} , {item['sender']['emailAddress']['address']} , {item['toRecipients'][0]['emailAddress']['address']} , {item['subject']} , {item['receivedDateTime']}")
+                except Exception as e:
+                    logging.info(f"Something went wrong while processing mailbox email continue with next message, {str(e)}")
+                    continue
 
             if self.next_page:
                 self.get_email_messages_of_user()
