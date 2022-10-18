@@ -168,7 +168,6 @@ class MailExchangeScrappper:
             print("Graph API call result: ")
             if(graph_data.status_code == 200):
                 self.user_details = graph_data.json()
-                print(self.user_details)
             elif graph_data.status_code == 404:
                 logging.info(f"Something went wrong with the email: {email} While fetching user, {graph_data.json()}")
             else:
