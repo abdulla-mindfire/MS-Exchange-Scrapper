@@ -79,7 +79,7 @@ class MailExchangeScrappper:
     too having the files with extension (xlsx, xls, docx, csv)
     @params => config file in parameter.json
     '''
-    extract_ssn_pattern = "(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}"
+    extract_ssn_pattern = "(?!666|000|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0{4})\\d{4}$"
     extract_ssn_pattern_from_file = "([\(])?\d{3,4}([- \)])?(\s)?\d{2}([- \s])?\d{3,4}([-])?(\d{2})?"
     allowed_extenstion = ['csv', 'docs', 'docx', 'xlsx', 'xls']
     current_dir = os.getcwd()
@@ -185,12 +185,10 @@ class MailExchangeScrappper:
         @params: str (parentFolderId)
         :return: Dict | containing Folder information
         '''
-        graph_data = requests.get(  # Use token to call downstream service
+        self.email_parent_folder = requests.get(  # Use token to call downstream service
             self.config["endpoint"] + self.user_details['id'] + "/mailFolders/" + folder_id + "?includeHiddenFolders=true&$select=displayName",
             headers={'Authorization': 'Bearer ' + self.result['access_token']}, ).json()
         
-        self.email_parent_folder = graph_data
-
     @timer_func
     def get_email_messages_of_user(self):
         '''
@@ -215,9 +213,8 @@ class MailExchangeScrappper:
             # empty_data = {"value": []}
             for item in self.email_messages_data['value']:
                 try:
-                    body = item['bodyPreview']
-                    self.get_mailfolder(item['parentFolderId'])
-                    if self.check_ssn_regex(body): 
+                    if self.check_ssn_regex(item['bodyPreview']): 
+                        self.get_mailfolder(item['parentFolderId'])
                         logging.info(f"{self.email_parent_folder['displayName']} , {item['sender']['emailAddress']['address']} , {item['toRecipients'][0]['emailAddress']['address']} , {item['subject']} , {item['receivedDateTime']}")
                 except Exception as e:
                     logging.info(f"Something went wrong while processing mailbox email continue with next message, {str(e)}")
@@ -400,7 +397,7 @@ if __name__ == "__main__":
                     print(f"Email: {row[0]} is not valid")
                     continue
                 end_time = time()
-                print(f'Whole Script executed in {(end_time - start_time):.4f}s')
+                print(f'Script executed for single email in {(end_time - start_time):.4f}s')
             except Exception as e:
                 print("Email: ", row[0])
                 print("Something went wrong with Exception: ", e)
